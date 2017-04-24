@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Results</title>
+	</head>
+	<body>
+		<h2>CodingDojo Wall</h2>
+		<h3>Welcome </h3>
+
+		<form action="post_message" method="post">
+			{% csrf_token %}
+
+			Post a message:<br><br>
+			<textarea cols="100" rows="8"></textarea><br>
+			<input type="submit" name="p_message"><br><br>
+
+			Post a comment:<br><br>
+			<textarea cols="100" rows="8" name="comment"></textarea><br>
+			<input type="submit" name="p_comment">
+
+		</form>
+
+
+
+
+
+	</body>
+</html>
